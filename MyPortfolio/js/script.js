@@ -40,3 +40,28 @@ window.onload = function() {
         event.preventDefault();
       }
     });
+
+const form1 = document.getElementById('contact-form1');
+const options = [];
+
+form.addEventListener('change', (event) => {
+  if (event.target.type === 'checkbox' && event.target.name === 'option[]') {
+    if (event.target.checked) {
+      options.push(event.target.value);
+    } else {
+      const index = options.indexOf(event.target.value);
+      if (index !== -1) {
+        options.splice(index, 1);
+      }
+    }
+  }
+});
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  // Convert options array to string
+  const optionsString = options.join(', ');
+  console.log(optionsString);
+  // Submit form to server-side script
+  form.submit();
+});
