@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Welcome to Graham Hatten's portfolio. Graham is a coding student from Hattiesburg, MS with a passion for web development, user experience development, and front-end and back-end development. Learn more about Graham's skills and interests.">
+	<title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<header id="ffc-logo">            
+      <a href="index.html"><img src="images/logo1.png" 
+          alt="Logo"></a>
+  </header>
+<body>
+	<div id="container">
+    <!--Mobile nav-->
+    <nav class="mobile-nav">
+      <div class="menu-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="client.html">Web Security</a>
+          <a href="table.html">Data Management</a>
+          <a href="contact.html">Contact Us</a>
+      </div>
+      <a class="menu-icon" onclick="hamburger()">
+          <div>&#9776;</div>
+      </a>
+  </nav>
+    
+        
+        <!-- The nav shows the links to other pages of my website -->
+        <nav class="tablet-desktop">
+          <ul>
+            <li><a href="index.html" title="Fitness Home">Home</a></li>
+            <li><a href="about.html" title="About Foward Fitness">Projects</a></li>
+            <li><a href="contact.html" title="Contact Foward Fitness">Contact</a></li>
+            <li><a href="client.html" title="Web Security">Web Security</a></li>
+            <li><a href="table.html" title="My Data">My Data</a></li>
+        </ul>
+        </nav>
+        <main>
+            <div id="client">
+                <h1>Web Security</h1>
+                <p>As you use the internet, it's important to be aware of the potential security risks and how to protect yourself. Here are some tips:</p>
+                <ul>
+                  <li>Use strong, unique passwords for each of your accounts.</li>
+                  <li>Keep your software up to date to protect against security vulnerabilities.</li>
+                  <li>Be cautious of emails, links, and downloads from unknown sources.</li>
+                </ul>
+              
+                <h2>Browser Information</h2>
+                <p>Web apps can access various properties of your browser and computer. Here are some examples:</p>
+                <ul>
+                    <li id="userAgent"></li>
+                    <li id="language"></li>
+                    <li id="platform"></li>
+                    <li id="screenWidth"></li>
+                    <li id="screenHeight"></li>
+                    <li id="colorDepth"></li>
+                </ul>
+                <h2>Sources</h2>
+                    <ol>
+                        <li><a href="https://www.consumer.ftc.gov/articles/how-keep-your-personal-information-secure">How to Keep Your Personal Information Secure</a> - Tips from the Federal Trade Commission on protecting your personal information online.</li>
+                        <li><a href="https://www.us-cert.gov/ncas/tips">National Cybersecurity Awareness Month Tips and Resources</a> - Tips and resources from the U.S. Cybersecurity and Infrastructure Security Agency for staying safe online.</li>
+                        <li><a href="https://www.dhs.gov/stopthinkconnect-toolkit">Stop.Think.Connect.™ Toolkit</a> - Resources from the U.S. Department of Homeland Security for promoting cybersecurity awareness.</li>
+                    </ol>
+            </div>
+            <aside>
+              <h2>Contact Me</h2>
+              <form id="contact-form1" action="index.html" method="post">
+                <div>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                  <label for="phone">Phone:</label>
+                  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                  <small>Format: 123-456-7890</small>
+                </div> 
+                <div>
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" maxlength="150"></textarea>
+                </div>
+                <div>
+                  <fieldset>
+                    <legend>Interests</legend>
+                    <input type="checkbox" id="option1" name="option[]" value="Option 1">
+                    <label for="option1">Option 1</label><br>
+                    <input type="checkbox" id="option2" name="option[]" value="Option 2">
+                    <label for="option2">Option 2</label><br>
+                    <input type="checkbox" id="option3" name="option[]" value="Option 3">
+                    <label for="option3">Option 3</label><br>
+                    <input type="checkbox" id="option4" name="option[]" value="Option 4">
+                    <label for="option4">Option 4</label><br>
+                    <input type="checkbox" id="option5" name="option[]" value="Option 5">
+                    <label for="option5">Option 5</label>
+                  </fieldset>
+                </div>
+                <button type="submit">Submit</button>
+              </form>
+            </aside>
+            <audio controls>
+              <source src="media/blues.mp3" type="audio/mp3">
+              <source src="media/blues.ogg" type="audio/ogg">
+              <p>Your Browser does not support the audio element</p>
+          </audio>
+        </main>
+        <footer>
+          <p> &copy; Copyright 2023. All Rights Reserved.</p>
+          <div class="social-icons">
+          <a href="mailto:graham.hatten.32@student.prcc.edu" title="Gmail"><img src="images/twitter-logo.png" alt="Gmail"></a>
+          <a href="https://www.facebook.com/yourfacebookpage" title="Facebook" target="_blank"><img src="images/facebook-logo.png" alt="Facebook"></a>
+          </div>
+      </footer>
+    </div> <!-- end of div container -->
+</body>
+</html>
